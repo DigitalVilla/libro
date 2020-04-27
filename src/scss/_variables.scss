@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// see: https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables
+// -----------------------------------------------------------------------------
+// Extra small mobile
+$min-width: 320px;
+// Small mobile
+$screen-xs: 360px;
+// Large mobile
+$screen-sm: 560px;
+// Small Tablet
+$screen-md: 768px;
+// Large Tablet
+$screen-lg: 992px;
+// iPad pro
+$screen-xl: 1200px;
+// laptop
+$screen-xxl: 1600px;
+// HD desktop
+$screen-xxl: 1920px;
+// $K Desktop
+$screen-4k: 3800px;
+
+
+//App :default
+$color-primary: #5539af;
+$color-secondary: #8b45b8;
+
+:root {
+	// Navbar
+	--navbar-height: 50px;
+	--transition: all 0.2s linear;
+
+	// Service default
+	--success: #239976;
+	--danger: #bd093f;
+	--info: #3f81a1;
+
+	// Greyscale
+	--white: #ffffff;
+	--off-white: #f2f2f2;
+	--grey-lightest: #e0e0e0;
+	--grey-light: #dfdfdf;
+	--grey: #a5a5a5;
+	--grey-medium: #596164;
+	--grey-dark: #38393c;
+	--grey-darkest: #231f20;
+	--black: #111122;
+
+
+	// Regular font family
+	--font-family: 'Oswald',
+		'Open Sans',
+		'Helvetica Neue Light',
+		'Helvetica Neue',
+		'Helvetica',
+		'Arial',
+		sans-serif;
+
+	// Code (monospace) font family
+	--code-font: 'Courier New',
+		'DejaVu Sans Mono',
+		'Bitstream Vera Sans Mono',
+		'Monaco',
+		monospace;
+
+	// Spacing
+	--space: 1em;
+	--space-xs: calc(var(--space) / 4);
+	--space-sm: calc(var(--space) / 2);
+	--space-md: calc(var(--space) * 1.5);
+	--space-lg: calc(var(--space) * 2);
+	--space-xl: calc(var(--space) * 3);
+	--space-xxl: calc(var(--space) * 5);
+	--space-xxxl: calc(var(--space) * 6);
+
+	// body font size
+	--font: 1em;
+	--font-xxs: calc(var(--font) * 0.68);
+	--font-xs: calc(var(--font) * 0.75);
+	--font-sm: calc(var(--font) * 0.9);
+	--font-md: calc(var(--font) * 1.2);
+	--font-lg: calc(var(--font) * 1.5);
+	--font-xl: calc(var(--font) * 1.75);
+	--font-xxl: calc(var(--font) * 2);
+	--font-xxxl: calc(var(--font) * 2.5);
+}

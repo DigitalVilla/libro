@@ -1,0 +1,39 @@
+.container {
+    --columns: 4;
+    --gutter-horizontal: 2vw;
+    --gutter-vertical: 20px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gutter-vertical);
+}
+
+.container-wide {
+    @extend .container;
+    max-width: 1400px;
+}
+
+.grid-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.grid-item {
+    position: relative;
+    padding: 0 var(--gutter-horizontal) var(--gutter-vertical);
+    flex-basis: 100%;
+
+    @media (min-width: 600px) {
+        flex-basis: 50%;
+    }
+
+    @media (min-width: 768px) {
+        flex-basis: 33.33%;
+        --gutter-horizontal: 1vw;
+    }
+
+    @media (min-width: 1120px) {
+        flex-basis: 25%;
+    }
+}
