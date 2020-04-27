@@ -4,10 +4,11 @@ $card-bg: #fafafa;
     .container-wide {
         min-height: 100vh;
 
-        @media (min-width: 600px) {
+        @media (min-width: 960px) {
             .card-split {
                 margin: 2rem 0;
                 display: flex;
+
                 .card-small {
                     &:first-child {
                         margin: 0 2rem 0 0;
@@ -107,6 +108,7 @@ $card-bg: #fafafa;
 
             &.max-width {
                 flex: 2;
+                padding: 0 1rem;
             }
 
             &:first-child {
