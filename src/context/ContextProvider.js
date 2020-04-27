@@ -1,6 +1,6 @@
 import React, { useReducer, createContext, useEffect } from 'react'
 import appReducer from './appReducer'
-import useFetch from './useFetch'
+import useFetch from '../hooks/useFetch'
 import * as types from './types'
 
 const initialState = {

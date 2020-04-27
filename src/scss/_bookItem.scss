@@ -1,0 +1,80 @@
+.book-item {
+    height: 450px;
+    position: relative;
+
+    &-wrapper {
+        box-sizing: initial;
+        background: #eaeaea;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1), margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        box-shadow: 0px 10px 10px rgba(#000, 0.2);
+        position: relative;
+        transition: all 0.2s;
+    }
+
+    .book-item-content {
+        padding: 0 10px;
+
+        .item-title {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 700;
+            margin: 12px 0;
+            display: block;
+            width: 80%;
+        }
+
+        .item-category {
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .item-excerpt {
+            margin-bottom: 20px;
+            display: block;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+
+        .more-info {
+            position: absolute;
+            bottom: 0;
+            right: 1rem;
+            margin-bottom: 25px;
+            padding-left: 0;
+            transition-duration: 0.5s;
+            font-size: 12px;
+            display: flex;
+            opacity: 0.3;
+            text-transform: uppercase;
+        }
+    }
+
+    &:hover {
+        .more-info { 
+            opacity: 1;
+            color: $color-primary;
+        }
+        .book-item-wrapper {
+            padding: 0 1% 1%;
+            margin: 0 -1% -1%;
+        }
+
+        .book-image-container {
+            width: 102%;
+            left: -1%;
+
+            .book-image {
+                // transition: background-size 0.4s;
+                background-size: auto 102% ;
+            }
+        }
+    }
+}
