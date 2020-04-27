@@ -8,6 +8,8 @@ import { AppContext } from '../context/ContextProvider'
 const BookSingle = React.memo((props) => {
     const { books } = useContext(AppContext)
     const book = books[props.id + '']
+    document.title = `Libro | ${book.title}`;
+
 
     return book ? (
         <main className="book-single">

@@ -75,12 +75,13 @@
 
 header {
     padding: 2rem 01rem;
-    margin-bottom: 2rem;
 
     h1 {
-        // text-align: center;
-        margin: 0 0 1rem;
+        display: flex;
+        align-items: center;
+        margin: 0 0 0.5rem;
         color: var(--grey-medium);
+        padding-top: 5px;
     }
 
     .form-controller {
@@ -117,6 +118,7 @@ table {
     th,td {
         color: var(--grey-medium);
         border: 1px solid rgb(197, 197, 197);
+        border: 2px solid rgba($color-primary, 0.2);
         margin: 0;
         padding: 5px 10px;
         width: max-content;
@@ -154,12 +156,5 @@ table {
     }
     .card-subtitle {
         font-size: 16px;
-    }
-}
-
-header {
-    h1 {
-        display: flex;
-        align-items: center;
     }
 }

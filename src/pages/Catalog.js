@@ -4,6 +4,7 @@ import BookList from '../components/BookList'
 import useSortedBooks from '../hooks/useSortedBooks'
 
 export default () => {
+    document.title = `Libro | Catalog`;
     const [
         books,
         options,
